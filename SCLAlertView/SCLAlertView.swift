@@ -732,6 +732,7 @@ open class SCLAlertView: UIViewController {
                 circleIconView = UIImageView(image: iconImage!)
             }
         }
+	circleIconView.contentMode = .scaleAspectFit
         circleView.addSubview(circleIconView!)
         let x = (appearance.kCircleHeight - appearance.kCircleIconHeight) / 2
         circleIconView!.frame = CGRect( x: x, y: x, width: appearance.kCircleIconHeight, height: appearance.kCircleIconHeight)
